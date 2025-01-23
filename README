@@ -1,0 +1,31 @@
+# Project description
+
+The main goal of the project is to create a classifier for time series using Machine learning, and in particular, Deep Learning techniques to identify whether the room is occupied or not. The idea behind this classificator is that it can be used for a smart lighting application to optimize energy consumption based on room occupancy.
+
+
+# Dataset
+
+The dataset includes the temporal behavior of the following features:
+
+	- **Light**
+	- **CO2**
+	- **Humidity**
+	- **Humidity/Ratio**
+	- **Temperature**
+
+of a room in a time horizon of around two months with minute-level granularity in order to detect the occupation status of the room.
+
+
+# Methodology
+
+Starting from a long time series, this is shrunk into several smaller time series segments, each approximately 1 hour long and the label of each of these segments is the occupation status of the room in their last timestamp.
+
+After that, through transformation and outlier elimination and replacement, the data are fed to a functional deep learning model, which uses LSTM cells to make a prediction.
+
+
+# Framework and libraries:
+
+- Pandas
+- SK-Learn
+- pyts
+- keras
