@@ -7,11 +7,11 @@ The main goal of the project is to create a classifier for time series using Mac
 
 The dataset includes the temporal behavior of the following features:
 
-	- **Light**
-	- **CO2**
-	- **Humidity**
-	- **Humidity/Ratio**
-	- **Temperature**
+	- Light
+	- CO2
+	- Humidity
+	- Humidity/Ratio
+	- Temperature
 
 of a room in a time horizon of around two months with minute-level granularity in order to detect the occupation status of the room.
 
